@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Whack-A-Mole</h1>
+    <div class="board" id ="board">
+      
+        <div class="score-container">
+        
+        <h3 class="score" id="score">Score:</h3>
+        <h3 class="score" id="live-score">0</h3>
+        </div>
+    <div class="time-container">
+    
+    <h3 class= "time-left" id= "time-left">Time left:</h3>
+    <h3 class="time-left"  id="live-time">0</h3>
+    </div>
+    </div>
+    <div class="grid">
+        <div class="square" id="1"></div>
+        <div class="square" id="2"></div>
+        <div class="square" id="3"></div>
+        <div class="square" id="4"></div>
+        <div class="square" id="5"></div>
+        <div class="square" id="6"></div>
+        <div class="square" id="7"></div>
+        <div class="square" id="8"></div>
+        <div class="square" id="9"></div>
+    </div>  
+    <div class="button">
+    <button id="start" class="start" onclick="moveMole()">Start</button>
+    <button id="reset" class="reset" onclick="reset()">Reset</button>
+
+    <script src="app.js"></script>
+</body>
+</html>

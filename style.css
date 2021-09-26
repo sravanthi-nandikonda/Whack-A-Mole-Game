@@ -1,0 +1,116 @@
+body{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Lobster', cursive;
+    background-image: url("https://img.freepik.com/free-photo/old-wooden-texture-background-vintage_55716-1138.jpg?size=626&ext=jpg");
+    color:white;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    letter-spacing: 2px;
+    
+}
+.board{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    align-self: center;
+}
+.score-container,.time-container{
+    display: flex;
+    flex-direction: row;
+    margin-right: 70px;
+    align-self: center;
+}
+.time-left,.score{
+    padding-right:10px;
+}
+
+#live-time,#live-score{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width:60px;
+    padding:5px;
+    border: 1px solid black;
+}
+.grid{
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height:400px;
+margin-top: 5px;
+margin-bottom: 5px;
+justify-content: center;
+align-content: center;
+    
+
+
+}
+.square{
+    height:120px;
+    width:120px;
+    margin: 4px;
+    background-color: rgb(245, 237, 237);
+    border-radius: 10px;
+    box-shadow:2px 3px black;
+    
+
+}
+.mole{
+    background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/mole.svg");
+     background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+button {
+    width: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  .start ,.reset{
+    color: #fff;
+    border: 3px solid #0a0401;
+    background-image: -webkit-linear-gradient(30deg, #050201 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #0e0704 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+  }
+  .start:hover, .reset:hover{
+    background-position: 100%;
+    color: #c266d3;
+  }
+
+  .reset{
+
+  }
+  @media screen and (max-width: 600px) {
+      .grid{
+          width:350px;
+          height:350px;
+          margin-left: 20px;
+      }
+      .square{
+          width:100px;
+          height:100px;
+      }
+      .score-container,.time-container{
+        margin-right: 5px;
+    }
+
+              
+      }
